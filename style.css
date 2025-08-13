@@ -110,7 +110,7 @@ header {
 .welcome-section h1{
     margin: 10px;
     padding: 10px;
-    font-style:bold;
+    font-weight:bold;
     display: flexbox;
     font-size: 2.5rem;
 
@@ -142,6 +142,24 @@ img{
     display: block;
     border-radius: 10px;
 }
+
+@media (max-width: 768px) {
+  .welcome-content {
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .text, .welcome-image {
+    flex: unset;
+    width: 100%;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+}
+
 
 .footer-intro {
   margin-top: 20px;

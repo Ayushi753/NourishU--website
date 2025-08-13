@@ -1,0 +1,257 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>SelCare & emotional Growth Tracker</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <header>
+    <h1>NourishU🍀</h1>
+  </header>
+  <nav class="navbar">
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="Selfcare.html">Selfcare</a></li>
+      <li><a href="Emotional Growth.html">Emotional Growth</a></li>
+      <li><a href="Relaxzone.html">RelaxZone</a></li>
+
+    </ul>
+  </nav>
+  <script src="script.js"></script>
+
+  <!------------------------------Center content------------------------------->
+  <section id="welcome-intro">
+    <div class="welcome-section">
+      <h1 style="font-family: Baskerville Old Face;" >What is Self Care?</h1>
+
+      <div class="welcome-content">
+
+        <div class="text">
+          <h2>
+            <p style="font-family:'Baskerville Old Face'">"Self-Care: A Gentle Rebellion"</p>
+          </h2>
+          <p style="font-family:'Baskerville Old Face'">
+          <p>Self-Care isn’t just a phase or trend,</p>
+          <p>It’s choosing yourself — again and again till the end.</p>
+          <p>It’s not about ego, not about pride,
+            It’s about standing strong, even when no one’s by your side.</p>
+
+          <p>Listen to your body, hear your soul’s sound,
+            even in silence, let your truth resound.</p>
+          <p>When the world forgets, don’t you forget,
+            To clap for yourself — no regrets, no debt.</p>
+
+          <p>Believe in you, when no one will,
+            hold your heart steady, calm and still.</p>
+          <p>Choose your energy like sacred ground,
+            not every vibe deserves to be around.</p>
+
+          <p>You can’t control what storms may rise,
+            but you can protect your inner skies.</p>
+          <p>So build a circle that feels like peace,
+            Where judgment fades and love won’t cease.</p>
+
+          <p>And if no one’s there when you fall apart,
+            Be the warmest shelter for your own heart.</p>
+          <p>Make your heart a haven, not a warzone inside —</p>
+          <p>A cozy bedroom, where your true self can reside.</p><br>
+          <p align="right" style="font-family:Sitka Small Semibold;">Ayushi Pandey</p>
+          </p>
+        </div>
+
+
+        <div class="welcome-image">
+          <img src="../Selfcare/ProjectPic/Flying Whale - Desktop Wallpaper - Copy.jpeg">
+        </div>
+      </div>
+  </section>
+
+
+  <!------------Quiz Section------------>
+  <div class="button-container">
+    <div class="Quiz">
+      <button onclick="startQuiz()" style="font-family:Sitka Small Semibold;">Lets PLay a Quiz 🎳 for your better mental🧠 and emotionl health💕</button>
+      <div id="quiz-section" class="quiz-section hidden">
+        <h3 align="center">SelfCare Quiz</h3>
+        <form id="quiz-form">
+          <ul>
+            <li>
+              <label><input type="checkbox" name="Q1">Do I make time for physical exercise or movement each
+                week?</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="Q2">Do I take breaks during my day to pause and breathe
+                deeply?</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="Q3">Do I allow myself moments of joy and hobbies that make me
+                happy?</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="Q4">Am I getting enough sleep to feel rested and energetic?</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="Q5">Do I regularly engage in activities that help me relax amd
+                recharge?</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="Q6">How oftn do I take time just for myself without
+                distractions?</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="Q7">How frequently do I eat nutritious meals that fuel my
+                body?</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="Q8">Am I setting healthy boundaries to protect my mental and emotional
+                space?</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="Q9">Am I aware of my feelings and take steps to manage stress
+                effectively?</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="Q10">How often do I connect with loved ones or supportive
+                people?</label>
+            </li>
+
+          </ul>
+          <button type="button" onclick="calculateSelfCare()" style="font-family: Sitka Small Semibold;">Submit</button>
+        </form>
+      </div>
+
+      <!-------------Result Section----------->
+      <div id="result-section" class="result-section hidden">
+        <h3 style="font-family: Baskerville Old Face;" align="center">Your SelfCare Rating</h3>
+        <p id="rating-text"></p>
+      </div>
+    </div>
+
+    <div class="question-section">
+      <details>
+        <summary style="font-size: bold;" style="font-family: Sitka Small Semibold;">Ask yourself </summary>
+        <h3 align="center">"Most efficient way to track yourself"</h3>
+
+        <ul>
+          <li style="font-weight: bold;">1.Emotional Check Reset</li>
+          <li>a. What am I feeling right now?</li>
+          <li>b. Where do I feel it in my body?</li>
+          <li>c. What might this be trying to tell me ?</li>
+
+          <li style="font-weight: bold;">2.Nervous System Reset</li>
+          <li>a. Free movement/ Dance</li>
+          <li>b. Nature Walk</li>
+          <li>c. Yoga /Meditation/Gym</li>
+
+          <li style="font-weight: bold;">3.Weekly "Inner Alignment"Ritual</li>
+          <li>a.Am I aligned with who I actually am?</li>
+          <li>b. Review your week</li>
+          <li>c.Is I am happy with this?</li>
+
+          <li style="font-weight: bold;">4.Boundaries and Reset</li>
+          <li>a.Learn to say "no"</li>
+          <li>b.Create Boundaries</li>
+          <li>c.Don’t tolerate anything which affects you</li>
+
+          <li style="font-weight: bold;">5. Take Stand</li>
+          <li>a. Believe in yourself</li>
+          <li>b. Be Calm and positive</li>
+          <li>c. Be happy </li>
+
+
+        </ul>
+      </details>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+
+<!-----------------------------------Cards zone----------------------------------->
+  <div style="display:flex; gap:35px; flex-wrap:wrap; margin: 20px;">
+    <div
+      style="flex:1; min-width:250px; max-width:300px; background:#e5d8c6; padding:10px; border-radius:10px; font-weight: bold; font-family: Kalinga; box-shadow: 0 4px 15px rgba(0, 0, 0, 2.2);">
+      "Everyday may not be good,but there is something good in everyday."
+    </div>
+    <div style="flex:1; min-width:250px; max-width:300px; background:#ecf3f5; padding:10px; border-radius:10px; font-weight: bold; font-family: Kalinga; box-shadow: 0 4px 15px rgba(0, 0, 0, 2.2);">
+      "Taking care of yourself is productive,so prioritize yourself🤍."
+
+    </div>
+    <div style="flex:1; min-width:250px; max-width:300px; background:#e5d8c6; padding:10px; border-radius:10px; font-weight: bold; font-family: Kalinga; box-shadow: 0 4px 15px rgba(0, 0, 0, 2.2);">
+      You're not who you were a year ago.Celebrate that."
+
+    </div>
+    <div style="flex:1; min-width:250px; max-width:300px; background:#ecf3f5; padding:10px; border-radius:10px; font-weight: bold; font-family: Kalinga; box-shadow: 0 4px 15px rgba(0, 0, 0, 2.2);">
+      "Strive for progress,not perfection."
+
+    </div>
+    <div style="flex:1; min-width:250px; max-width:300px; background:#e5d8c6; padding:10px; border-radius:10px; font-weight: bold; font-family: Kalinga; opacity: calc(2s); box-shadow: 0 4px 15px rgba(0, 0, 0, 2.2);"> 
+      "Celebrate the small wins."
+
+    </div>
+  </div>
+
+
+  <!--------Note Section------->
+
+  <section class="notes-section">
+    <h2 style="font-family: Baskerville Old Face;">Self Care Journal</h2>
+    <textarea id="notes-area" class="notes-area" placeholder="Write waht is in your mind and heart"></textarea>
+    <br>
+    <button onclick="saveNotes()">Save</button>
+    <p id="save-status"></p>
+  </section>
+
+
+  <!-----------------------Footer Section----------------------------->
+  <section class="footer-intro">
+    <div class="footer-container">
+
+      <!-- Column 1: About Us -->
+      <div class="footer-column about-us">
+        <h3>About Us</h3>
+        <p>
+          This space isn’t about looking perfect or having it all together. It’s for the days when everything feels
+          too much and you just want to feel seen. Whether it's through journaling, movement, silence, or just being —
+          this is your space. Real, raw, and without filters. No pressure to fix yourself. Just space to be yourself.
+          "Just sit with yourself and enjoy  being yourself🤍".
+        </p>
+      </div>
+
+      <!-- Column 2: Useful Links -->
+      <div class="footer-column useful-links">
+        <h3>Useful Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Selfcare</a></li>
+          <li><a href="#">Emotional Growth</a></li>
+          <li><a href="#">Relax Zone</a></li>
+        </ul>
+      </div>
+      <!-- Column 3: Our Services -->
+      <div class="footer-column our-service">
+        <h3>Our Services</h3>
+        <ul>
+          <li>Guided Journal Prompt</li>
+          <li>Healing Art Session</li>
+          <li>Mindful Movement</li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Contact Us -->
+      <div class="footer-column contact-us">
+        <h3>Contact Us</h3>
+        <p>Email: <a href="mailto:pandeyayushi282@gmail.com">pandeyayushi282@gmail.com</a></p>
+      </div>
+    </div>
+  </section>
+
+  <div class="signature" style="font-family: Sitka Small Semibold;">
+    Made with stillness , storms & stories by Ayushi Pandey
+  </div>
+</body>

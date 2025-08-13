@@ -1,0 +1,231 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>SelCare & emotional Growth Tracker</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <header>
+    <h1>NourishU🍀</h1>
+  </header>
+  <nav class="navbar">
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="Selfcare.html">Selfcare</a></li>
+      <li><a href="Emotional Growth.html">Emotional Growth</a></li>
+      <li><a href="Relaxzone.html">RelaxZone</a></li>
+
+    </ul>
+  </nav>
+
+  <!------------------------------Center content------------------------------->
+  <section id="welcome-intro">
+    <div class="welcome-section">
+      <h1 style="font-family: Baskerville Old Face;">Emotional Growth</h1>
+
+      <div class="welcome-content">
+
+        <div class="text">
+          <p style="font-family:'Baskerville Old Face'">
+          <h2><p style="font-family:'Baskerville Old Face'" align="center">"What is Emotional Growth ?"</p></h2>
+          <p style="font-family: Calibri Light" align="center"  >
+            <h3>We grow up learning how to care for others—when to smile, what to say, when to stay silent. We're taught to
+            be kind, to give, to be good. But no one really teaches us how to be good to ourselves. We’re trained to
+            adjust, to shrink, to mold ourselves into versions that fit in with the world, even when we stop fitting
+            within our own skin. We remember everyone’s needs, we show up for everyone else, and somewhere along the
+            way, we forget how to show up for ourselves. We become strangers to our own reflection—not because we don’t
+            care, but because it’s easier than facing the noise within. It’s easier to numb than to feel, easier to run
+            than to rest. But the truth is, if we don’t stop to listen to our own hearts, no one else will. And that
+            isn’t anyone else’s fault—it’s ours. It’s our responsibility. So maybe today, I choose differently. I choose
+            me. I choose to feel, to pause, to heal. Not by hurting others, but no longer by hurting myself either.
+            Because real compassion—deep, honest compassion—must include the person in the mirror too.
+          </h3></p>
+        </div>
+
+
+        <div class="welcome-image">
+          <img src="../Selfcare/ProjectPic/download (3).jpg">
+        </div>
+      </div>
+  </section>
+
+
+  <!------------Quiz Section------------>
+  <div class="button-container">
+    <div class="Quiz">
+      <button onclick="startQuiz()" style="font-family:Sitka Small Semibold;">Lets PLay a Quiz 🎳 for your better
+        mental🧠 and emotionl health💕</button>
+      <div id="quiz-section" class="quiz-section hidden">
+        <h3 align="center">SelfCare Quiz</h3>
+        <form id="quiz-form">
+          <ul>
+            <li>
+              <label><input type="checkbox" name="Q1">Do I try to understand my emotions?
+              </label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="Q2">Do I pause and think before reacting emotionally?
+              </label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="Q3">Can I manage my anger in a calm and respectful way?
+              </label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="Q4">Do I regularly make myself proud?</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="Q5">Do I try to listen without judging others?
+              </label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="Q6">Do I think positively about myself even after making mistakes?
+              </label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="Q7">Do I try to learn from my emotional setbacks?
+              </label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="Q8">Am I able to forgive others and also ask for forgiveness>
+              </label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="Q9">Do I recognize and try to manage my mood swings?
+              </label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="Q10">Do I allow myself to feel the emotions?
+              </label>
+            </li>
+
+          </ul>
+          <button type="button" onclick="calculateSelfCare()" style="font-family: Sitka Small Semibold;">Submit</button>
+        </form>
+      </div>
+
+      <!-------------Result Section----------->
+      <div id="result-section" class="result-section hidden">
+        <h3 style="font-family: Baskerville Old Face;" align="center">Your Emotional Growth Rating</h3>
+        <p id="rating-text"></p>
+      </div>
+    </div>
+
+    <div class="question-section">
+      <details>
+        <summary style="font-size: bold;" style="font-family: Sitka Small Semibold;">Ask yourself </summary>
+        <h3 align="center">"Don't neglect your emotions"</h3>
+        <a href="https://youtu.be/iWlcAylOVNU" taget="_blank" rel="reopener rereferrer">
+          <img src="../Selfcare/ProjectPic/be your safe place aura.jpg" height="300px" width="100%">
+        </a>
+        <ul>
+          <li>
+            <h5 align="center">
+              "Somewhere between surviving and pleasing the world, we forget how it feels to truly live for ourselves.
+              Emotional growth isn’t about being unbreakable — it’s about finally acknowledging the cracks, sitting with
+              the
+              ache, and deciding to love yourself anyway. Not perfectly, just honestly.
+            </h5>
+          </li>
+        </ul>
+      </details>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+
+  <div style="display:flex; gap:35px; flex-wrap:wrap; margin: 20px;">
+    <div
+      style="flex:1; min-width:250px; max-width:300px; background:#ecf3f5; padding:10px; border-radius:10px; font-weight: bold; font-family: Kalinga; box-shadow: 0 4px 15px rgba(0, 0, 0, 2.2);">
+      "Inhale
+      calm, exhale chaos. Even 2 minutes of mindful breathing can reset your entire day."
+    </div>
+    <div style="flex:1; min-width:250px; max-width:300px; background:#e5d8c6; padding:10px; border-radius:10px; font-weight: bold; font-family: Kalinga; box-shadow: 0 4px 15px rgba(0, 0, 0, 2.2);">When words
+      fail, let melodies heal. Tune into what your soul is trying to say.
+
+    </div>
+    <div style="flex:1; min-width:250px; max-width:300px; background:#ecf3f5; padding:10px; border-radius:10px; font-weight: bold; font-family: Kalinga; box-shadow: 0 4px 15px rgba(0, 0, 0, 2.2);">Write it
+      raw. Let the page carry what your heart can’t hold anymore.
+
+    </div>
+    <div style="flex:1; min-width:250px; max-width:300px; background:#e5d8c6; padding:10px; border-radius:10px; font-weight: bold; font-family: Kalinga; box-shadow: 0 4px 15px rgba(0, 0, 0, 2.2);">Write it
+      raw. Let the page carry what your heart can’t hold anymore.
+
+    </div>
+    <div style="flex:1; min-width:250px; max-width:300px; background:#ecf3f5; padding:10px; border-radius:10px; font-weight: bold; font-family: Kalinga; opacity: calc(2s); box-shadow: 0 4px 15px rgba(0, 0, 0, 2.2);"> Take the
+      Damn Break
+    </div>
+  </div>
+
+
+  <!--------Note Section------->
+
+  <section class="notes-section">
+    <h2 style="font-family: Baskerville Old Face;">Self Care Journal</h2>
+    <textarea id="notes-area" class="notes-area" placeholder="Write waht is in your mind and heart"></textarea>
+    <br>
+    <button onclick="saveNotes()">Save</button>
+    <p id="save-status"></p>
+  </section>
+
+  
+
+
+
+  <!------------------Footer Section----------------------------->
+  <section class="footer-intro">
+    <div class="footer-container">
+
+      <!-- Column 1: About Us -->
+      <div class="footer-column about-us">
+        <h3>About Us</h3>
+        <p>
+          This space isn’t about looking perfect or having it all together. It’s for the days when everything feels
+          too much and you just want to feel seen. Whether it's through journaling, movement, silence, or just being —
+          this is your space. Real, raw, and without filters. No pressure to fix yourself. Just space to be yourself.
+          "Just sit with yourself and enjoy being yourself🤍".
+        </p>
+      </div>
+
+      <!-- Column 2: Useful Links -->
+      <div class="footer-column useful-links">
+        <h3>Useful Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Selfcare</a></li>
+          <li><a href="#">Emotional Growth</a></li>
+          <li><a href="#">Relax Zone</a></li>
+        </ul>
+      </div>
+      <!-- Column 3: Our Services -->
+      <div class="footer-column our-service">
+        <h3>Our Services</h3>
+        <ul>
+          <li>Guided Journal Prompt</li>
+          <li>Healing Art Session</li>
+          <li>Mindful Movement</li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Contact Us -->
+      <div class="footer-column contact-us">
+        <h3>Contact Us</h3>
+        <p>Email: <a href="mailto:pandeyayushi282@gmail.com">pandeyayushi282@gmail.com</a></p>
+      </div>
+    </div>
+  </section>
+
+  <div class="signature" style="font-family: Sitka Small Semibold;">
+    Made with stillness , storms & stories by Ayushi Pandey
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

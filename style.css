@@ -136,9 +136,9 @@ header {
     flex: 1;
 }
 
-image{
+img{
     width: 100%;
-    height: fit-content;
+    height: auto;
     display: block;
     border-radius: 10px;
 }

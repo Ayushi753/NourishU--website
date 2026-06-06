@@ -12,6 +12,7 @@
 
   <header>
     <h1>NourishU🍀</h1>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">Dark Mode</button>
   </header>
 
   <nav class="navbar">
@@ -73,6 +74,36 @@
       <div class="welcome-image">
         <img src="ProjectPic/download (4).jpg" alt="Selfcare">
       </div>
+    </div>
+  </section>
+
+  <section class="engagement-section">
+    <div class="tracker-card">
+      <h2>Daily Mood Tracker</h2>
+      <p>Select the mood that fits how you feel today:</p>
+      <div class="mood-buttons">
+        <button type="button" class="mood-btn" data-mood="Happy">😊 Happy</button>
+        <button type="button" class="mood-btn" data-mood="Calm">😌 Calm</button>
+        <button type="button" class="mood-btn" data-mood="Sad">😢 Sad</button>
+        <button type="button" class="mood-btn" data-mood="Stressed">😣 Stressed</button>
+        <button type="button" class="mood-btn" data-mood="Grateful">🙏 Grateful</button>
+      </div>
+      <p id="mood-status">No mood saved yet.</p>
+      <h3>Recent mood history</h3>
+      <ul id="mood-history" class="mood-history"></ul>
+    </div>
+
+    <div class="checklist-card">
+      <h2>Daily Self-Care Checklist</h2>
+      <ul class="checklist" id="selfcare-checklist">
+        <li><label><input type="checkbox" data-task="drinkWater"> Drink a glass of water</label></li>
+        <li><label><input type="checkbox" data-task="stretch"> Stretch or move for 5 minutes</label></li>
+        <li><label><input type="checkbox" data-task="breathe"> Take a deep breathing break</label></li>
+        <li><label><input type="checkbox" data-task="rest"> Give yourself a restful pause</label></li>
+        <li><label><input type="checkbox" data-task="gratitude"> Notice one thing you're grateful for</label></li>
+      </ul>
+      <button type="button" onclick="saveChecklist()" class="save-checklist-btn">Save Checklist</button>
+      <p id="checklist-status"></p>
     </div>
   </section>
 
